@@ -1,0 +1,190 @@
+html, body, header, section {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a, a:hover {
+    color: rgb(73, 72, 72);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #230c47!important;
+}
+
+.inicio {
+    background-image: url('img/bg.jpg');
+}
+
+.navbar-brand {
+    font-family: 'Rouge Script', cursive;
+    font-size: 35px;
+    color: #230c47!important;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    background-image: none;
+    border-color: #8f8f8f;
+}
+
+.btn-outline-primary:hover {
+    background-color: #cfcece;
+    border-color: #cacaca;
+}
+
+.caption-topo {
+    position: absolute;
+    margin-top: 4%;
+    max-width: 90%;
+    margin-left: 4%;
+}
+
+.rodape {
+  background-color: #f4f4f4;
+  border-top: 1px solid #ccc;
+}
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px)
+// Sem media query para `xs`, já que este é o padrão, no Bootstrap. */
+
+@media (max-width: 575.98px) {
+    .display-2 {
+        font-size: 45px;
+    }
+
+    .caption-topo {
+        margin-top: 5%;
+        margin-left: 1%;
+    }
+
+    .caption-topo h2 {
+        font-size: 20px!important;
+    }
+
+    .caption-topo p {
+        font-size: 15px!important;
+    }
+
+    /*button nav principal collapsada*/
+
+    .btn-outline-primary {
+        margin: 0!important;
+    }
+
+    /* Section Colecao */
+
+    .img-colecao{
+        margin-bottom: -200px;
+
+    }
+
+    .p-colecao {
+        margin-top: -100px!important;
+    }
+
+    /* Terceira section */
+
+    .display-4 {
+        text-align: center;
+    }
+
+    /* Footer */
+    .redes-sociais {
+      margin-top: -55px;
+    }
+
+    nav.container {
+      padding: 15px;
+      margin-left: 1%;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    nav>ul.navbar-nav {
+      flex-direction: row!important;
+    }
+}
+
+/* Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .display-2 {
+        font-size: 50px;
+    }
+
+    .caption-topo {
+        margin-top: 3%;
+    }
+
+    .caption-topo h2 {
+        font-size: 20px!important;
+    }
+
+    /* Section Colecao */
+
+    .img-colecao{
+        margin-bottom: -120px;
+
+    }
+
+    .p-colecao {
+        margin-top: 0px!important;
+    }
+
+    /* Terceira section */
+
+    .display-4 {
+        text-align: center;
+    }
+
+    /*button nav principal collapsada*/
+    .btn-outline-primary {
+        margin: 0!important;
+    }
+ }
+
+/* Dispositivos médios (tablets com 768px ou mais)*/
+@media (min-width: 768px) and (max-width:991.98px) {
+    /* Header */
+    .display-2 {
+        font-size: 50px;
+    }
+
+    .caption-topo {
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+
+    .caption-topo h2 {
+        font-size: 20px!important;
+    }
+
+    /* Section Colecao */
+
+    .img-fluid{
+        margin-bottom: 45px;
+    }
+ }
+
+/*// Dispositivos large (desktops com 992px ou mais)*/
+@media (min-width: 992px) and (max-width:1199.98px){
+    .display-2 {
+        font-size: 75px;
+    }
+
+    .caption-topo {
+        margin-top: 3%;
+    }
+
+    .caption-topo h2 {
+        font-size: 25px!important;
+    }
+ }
+
+/*// Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+@media (min-width: 1200px) {
+
+ }
